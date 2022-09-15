@@ -1,0 +1,233 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+* {
+  font-size: 18px;
+  font-family: "Space Grotesk", sans-serif;
+}
+body {
+  background-image: url("images/bg-main-desktop.png");
+  background-size: 520px;
+  background-repeat: no-repeat;
+}
+.main-container{
+  display:flex;
+  gap:170px;
+  width:1100px;
+  margin:auto;
+  margin-top:100px;
+}
+.credit-card{
+  display:flex;
+  flex-direction:column;
+  height:550px;
+  width:550px;  
+}
+
+.card-front {
+  background-image: url("images/bg-card-front.png");
+  background-repeat: no-repeat;
+  background-size: 450px;
+  width: 390px;
+  padding: 30px;
+  border-radius: 10px;
+  color: white;
+}
+.card-back{
+  margin-top:0;
+}
+.card-back p{
+  position:relative;
+  width:50px;
+  margin:0px;
+  top:130px;
+  left:450px;
+  color:hsl(270, 3%, 87%);
+}
+.card-back img{
+  border-radius:10px;
+  background-image:linear-gradient(360deg,hsl(0, 0%, 100%),hsl(270, 3%, 87%));
+}
+.card-front img {
+  width: 100px;
+  padding-bottom: 15px;
+}
+.card-num {
+  font-size: 190%;
+  margin-left: 0px;
+  margin-bottom: 0;
+}
+.card-profile {
+  display: flex;
+  width: 390px;
+  justify-content:space-between;
+  color: white;
+}
+h4 {
+  padding: 0;
+  font-weight: lighter;
+}
+p{
+  margin-top:24px;
+}
+.card-back img{
+  margin-left:100px;
+  background-image:linear-gradient(white, 278, 68%, 11%)
+}
+.input-form{
+  margin-top:50px;
+}
+.input-form input{
+  padding:10px;
+  border:1px solid hsl(270, 3%, 87%);
+  border-radius:10px;
+  width:350px;
+  cursor:pointer; 
+}
+.input-form input:hover{
+  border:1px solid hsl(279, 6%, 55%);
+}
+.input-form input::placeholder{
+  color:hsl(270, 3%, 87%);
+}
+.input-form p{
+  color:hsl(278, 68%, 11%);
+}
+.date input{
+  width:60px;
+  margin-right:10px;
+}
+.cvc{
+  margin-left:20px;
+}
+.cvc input{
+  width:140px;
+}
+.info{
+  display:flex;
+  margin-bottom:40px;
+}
+.button input{
+  width:370px;
+  color:white;
+  padding:15px;
+  background:hsl(278, 68%, 11%);
+}
+
+@media screen and (max-width:375px){
+  body{
+    background:url("images/bg-main-mobile.png");
+    background-repeat:no-repeat;
+    background-size: 370px;
+    position:relative;
+
+  }
+  .main-container{
+    display:flex;
+    justify-content:left;
+    flex-direction:column;
+    gap:0;
+    width:375px;
+    margin:0;
+    margin-top:0px;
+  }
+  .card-front{
+    background-image: url("images/bg-card-front.png");
+    background-repeat: no-repeat;
+    background-size: 280px;
+    order:2;
+    margin-left:20px;
+    position:relative;
+    bottom:67px;
+    width: 280px;
+    z-index:1;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+  }
+  .card-front img{
+    width: 60px;
+    padding-bottom: 3px;
+  }
+  .card-num{
+    font-size: 145%;
+    margin-left: 0px;
+    margin-bottom: 0;
+  }
+  .card-profile {
+    display: flex;
+    width: 257px;
+    justify-content:space-between;
+    color: white;
+  }
+  h4 {
+    font-size:10px;
+    padding: 0;
+    font-weight: lighter;
+  }
+  .card-profile p{
+    margin-top:14px;
+    font-size:50%;
+  }
+  .card-back img{
+    float:right;
+    order:1;
+    z-index:2;
+    margin-right:20px;
+    margin-top:30px;
+    width:280px;
+    margin-left:50px;
+  }
+  .credit-card{
+    display:flex;
+    flex-direction:column;
+    height:270px;
+    width:375px;  
+  }
+  .card-back p{
+    position:relative;
+    width:50px;
+    margin:0px;
+    font-size:13px;
+    top:113px;
+    left:295px;
+    color:hsl(270, 3%, 87%);
+  }
+  .input-form input{
+    padding:10px;
+    border:1px solid hsl(270, 3%, 87%);
+    border-radius:10px;
+    width:300px;
+    cursor:pointer; 
+  }
+  .date input{
+    width:50px;
+    margin-right:5px;
+  }
+  .cvc{
+    margin-left:0;
+    margin-left:8px;
+  }
+  .cvc input{
+    width:134px;
+  }
+  .input-form{
+    margin-top:25px;
+    margin-left:25px;
+  }
+  .input-form p{
+    color:hsl(278, 68%, 11%);
+    font-size:14px;
+  }
+  .button input{
+    width:325px;
+    color:white;
+    padding:15px;
+    background:hsl(278, 68%, 11%);
+  }
+}
